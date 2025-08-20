@@ -1,66 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Happy Independence Day - India</title>
-    <style>
-        body {
-            background-color: #fdf6e3;
-            text-align: center;
-            font-family: Arial, sans-serif;
-            padding: 20px;
-        }
-        h1 {
-            color: #ff9933;
-            font-size: 3rem;
-        }
-        .flag-colors {
-            color: #138808;
-        }
-        .gallery {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 15px;
-            margin-top: 20px;
-        }
-        .gallery img {
-            width: 300px;
-            height: 200px;
-            object-fit: cover;
-            border: 4px solid #000;
-            border-radius: 10px;
-            transition: transform 0.3s;
-        }
-        .gallery img:hover {
-            transform: scale(1.05);
-        }
-        footer {
-            margin-top: 20px;
-            font-weight: bold;
-            color: #000080;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Independence Day</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(to right, #FF9933, white, #138808);
+      text-align: center;
+    }
+
+    header {
+      background: rgba(0, 0, 0, 0.6);
+      color: white;
+      padding: 20px;
+      font-size: 2.5rem;
+      font-weight: bold;
+    }
+
+    .flag {
+      margin: 20px auto;
+      width: 300px;
+      border: 2px solid #000;
+    }
+
+    .flag div {
+      height: 70px;
+    }
+
+    .saffron {
+      background-color: #FF9933;
+    }
+
+    .white {
+      background-color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .green {
+      background-color: #138808;
+    }
+
+    .chakra {
+      width: 60px;
+      height: 60px;
+      border: 2px solid #000080;
+      border-radius: 50%;
+      position: relative;
+    }
+
+    .chakra::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 2px;
+      height: 60px;
+      background: #000080;
+      transform: translate(-50%, -50%) rotate(0deg);
+      animation: spin 5s linear infinite;
+    }
+
+    @keyframes spin {
+      0% { transform: translate(-50%, -50%) rotate(0deg); }
+      100% { transform: translate(-50%, -50%) rotate(360deg); }
+    }
+
+    h2 {
+      color: #000;
+      margin: 20px 0;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      padding: 20px;
+    }
+
+    .gallery img {
+      width: 200px;
+      height: 130px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0px 4px 8px rgba(0,0,0,0.3);
+      transition: transform 0.3s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.1);
+    }
+
+    footer {
+      background: rgba(0, 0, 0, 0.7);
+      color: white;
+      padding: 15px;
+      margin-top: 30px;
+    }
+  </style>
 </head>
 <body>
+  <header>🇮🇳 Happy Independence Day 🇮🇳</header>
 
-    <h1>Happy<span class="flag-colors">Independence Day</span>India</h1>
+  <div class="flag">
+    <div class="saffron"></div>
+    <div class="white"><div class="chakra"></div></div>
+    <div class="green"></div>
+  </div>
 
-    <p>Celebrating the spirit of freedom, unity, and pride. Jai Hind! ✨</p>
+  <h2>Let’s celebrate the spirit of Freedom and Unity</h2>
 
-    <div class="gallery">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Flag_of_India.svg/320px-Flag_of_India.svg.png" alt="Indian Flag">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/India_Gate_in_New_Delhi_03-2016_img3.jpg/320px-India_Gate_in_New_Delhi_03-2016_img3.jpg" alt="India Gate">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Taj_Mahal_in_March_2004.jpg/320px-Taj_Mahal_in_March_2004.jpg" alt="Taj Mahal">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Red_Fort_in_Delhi_03-2016_img3.jpg/320px-Red_Fort_in_Delhi_03-2016_img3.jpg" alt="Red Fort">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Indian_soldiers_marching_on_Republic_Day.jpg/320px-Indian_soldiers_marching_on_Republic_Day.jpg" alt="Indian Soldiers">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Diya_Lamp_with_Indian_flag.jpg/320px-Diya_Lamp_with_Indian_flag.jpg" alt="Independence Celebration">
-    </div>
+  <div class="gallery">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/India_Gate_in_New_Delhi_03-2016_img3.jpg/640px-India_Gate_in_New_Delhi_03-2016_img3.jpg" alt="India Gate">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Taj_Mahal_in_March_2004.jpg/640px-Taj_Mahal_in_March_2004.jpg" alt="Taj Mahal">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Mysore_Palace_Morning.jpg/640px-Mysore_Palace_Morning.jpg" alt="Mysore Palace">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Red_Fort_in_Delhi_03-2016_img3.jpg/640px-Red_Fort_in_Delhi_03-2016_img3.jpg" alt="Red Fort">
+  </div>
 
-    <footer>
-        🇮🇳 Proud to be Indian | Jai Hind! 🇮🇳
-    </footer>
-
+  <footer>
+    © 2025 - Wishing you a Joyful Independence Day!
+  </footer>
 </body>
 </html>
